@@ -4,9 +4,17 @@ def greeting():
 
 class StringCalculator:
     def add(number: str) -> int:
-        if number == "":
-            return 0
-        return 1
+        if len(number) < 1:
+            if number == "":
+                return 0
+            else:
+                return int(number)
+        else:
+            numbers = number.split(",")
+            result = 0
+            for i in numbers:
+                result += int(i)
+            return result
 
 
 """
