@@ -4,7 +4,9 @@ def greeting():
 
 class StringCalculator:
     def add(number: str) -> int:
-        return 0
+        if number == "":
+            return 0
+        return 1
 
 
 """
