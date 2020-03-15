@@ -87,7 +87,7 @@ http://osherove.com/kata
 
 4. Support different delimiters:
    to change a delimiter, the beginning of the string will contain a separate line
-   - [_] accept multiple delimiters
+   - [ ] accept multiple delimiters
    that looks like this:
    `“//[delimiter]\n[numbers…]”`
 
@@ -100,19 +100,19 @@ http://osherove.com/kata
 
 5. Calling **Add** with a **negative number** will throw an **exception** “negatives not allowed” -
    and the **negative that was passed**.
-   - [_] throw exception
-   - [_] display msg and err
+   - [ ] throw exception
+   - [ ] display msg and err
 
 6. If there are **multiple negatives**, show all of them in the **exception message**
-   - [_] throw exception
-   - [_] display msg with multi negatives
+   - [ ] throw exception
+   - [ ] display msg with multi negatives
 
 7. Using **TDD**, Add a method to `StringCalculator`
    called `public int GetCalledCount()`
    that returns how many times `Add()` was invoked.
    **Remember** - Start with a **failing (or even non compiling**) test.
-   - [_] add method `public int GetCalledCount()`
-   - [_] return count of `add()`
+   - [ ] add method `public int GetCalledCount()`
+   - [ ] return count of `add()`
 
 8. (.NET Only) Using TDD, Add an **event** to the `StringCalculator` class named
    `public event Action<string, int> AddOccured` ,
@@ -135,11 +135,11 @@ http://osherove.com/kata
 
 9. Numbers bigger than **1000** should be **ignored**, for example:
    `2 + 1001 == 2`
-   - [_] ignore numbers above 1000
+   - [ ] ignore numbers above 1000
 
 10. Delimiters can be of any length with the following format:
     `“//[delimiter]\n”`
-    - [_] passed delimiter of any length
+    - [ ] passed delimiter of any length
     for example:
     `“//[***]\n1***2***3” == 6`
 
