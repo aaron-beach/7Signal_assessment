@@ -26,11 +26,11 @@ class StringCalculator:
                 return int(number)
         else:
             """
-            allow \n to replace ','
+             \n to replace ','
             use regex with split to give list
             """
 
-            pattern = r"[,:\n]"
+            pattern = r"[,\n]"
             numbers = re.split(pattern, number)
             result = 0
             for i in numbers:

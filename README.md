@@ -67,40 +67,52 @@ http://osherove.com/kata
 1. In a **test-first manner**, create a simple class `class StringCalculator`
    with a method `public int Add(string numbers)`
 
-   1. The method can take **0, 1 or 2 numbers**, and will **return their sum**
+   - [x] The method can take **0, 1 or 2 numbers**, and will **return their sum**
    (for an **empty string** it will return **0**)
    for example
    `“” == 0 , “1” == 1 , “1,2” == 3`
-   2. Start with the **simplest** test case of an **empty string** and move to **one & two numbers**
-   3. Remember to solve things as **simply as possible** so that you force yourself to
+   - [x] Start with the **simplest** test case of an **empty string** and move to **one & two numbers**
+   - [x] Remember to solve things as **simply as possible** so that you force yourself to
    write tests you did not think about
-   4. Remember to **refactor** after each passing test
+   * Remember to **refactor** after each passing test
 
 
 2. Allow the **Add** method to handle an unknown amount of numbers
+   - [x] accept unknown number of numbers
 
 3. Allow the **Add** method to handle **new lines** between numbers (instead of **commas**).
-   1. the following input is ok: `“1\n2,3” == 6`
-   2. the following is **INVALID input** so do not expect it : **`“1,\n”`** (not need to write a test for it)
+   - [x] the following input is ok: `“1\n2,3” == 6`
+
+   - [x] the following is **INVALID input** so do not expect it : **`“1,\n”`** (not need to write a test for it)
 
 4. Support different delimiters:
    to change a delimiter, the beginning of the string will contain a separate line
+   - [_] accept multiple delimiters
    that looks like this:
    `“//[delimiter]\n[numbers…]”`
+
    for example
    `“//;\n1;2” == 3`
+
    since the default delimiter is `‘;’` .
+
    **Note:** All existing scenarios and tests should still be supported
 
 5. Calling **Add** with a **negative number** will throw an **exception** “negatives not allowed” -
    and the **negative that was passed**.
+   - [_] throw exception
+   - [_] display msg and err
 
 6. If there are **multiple negatives**, show all of them in the **exception message**
+   - [_] throw exception
+   - [_] display msg with multi negatives
 
 7. Using **TDD**, Add a method to `StringCalculator`
    called `public int GetCalledCount()`
    that returns how many times `Add()` was invoked.
    **Remember** - Start with a **failing (or even non compiling**) test.
+   - [_] add method `public int GetCalledCount()`
+   - [_] return count of `add()`
 
 8. (.NET Only) Using TDD, Add an **event** to the `StringCalculator` class named
    `public event Action<string, int> AddOccured` ,
@@ -123,9 +135,11 @@ http://osherove.com/kata
 
 9. Numbers bigger than **1000** should be **ignored**, for example:
    `2 + 1001 == 2`
+   - [_] ignore numbers above 1000
 
 10. Delimiters can be of any length with the following format:
     `“//[delimiter]\n”`
+    - [_] passed delimiter of any length
     for example:
     `“//[***]\n1***2***3” == 6`
 
