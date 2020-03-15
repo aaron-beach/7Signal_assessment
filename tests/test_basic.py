@@ -48,3 +48,19 @@ test for \n preceding ,
 def test_str_calc_new_line_add_with_comma_after():
     assert code.StringCalculator.add("1\n,1") == 2
 """
+
+"""
+Allow different delimiters.
+ex.
+`"//;\n1;2"==3`
+//l     delimiter pattern
+\n      start numbers
+1;2     delimiter
+"""
+
+
+def test_str_calc_provided_delimiter():
+    assert code.StringCalculator.add("//;\n1;2") == 3
+    assert code.StringCalculator.add("//.\n4.2") == 6
+    assert code.StringCalculator.add("//;\n1;8,3") == 12
+    assert code.StringCalculator.add("\n1;2") != 3

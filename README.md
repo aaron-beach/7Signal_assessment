@@ -87,7 +87,7 @@ http://osherove.com/kata
 
 4. Support different delimiters:
    to change a delimiter, the beginning of the string will contain a separate line
-   - [_] accept multiple delimiters
+   - [x] accept multiple delimiters
    that looks like this:
    `“//[delimiter]\n[numbers…]”`
 
