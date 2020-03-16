@@ -87,11 +87,7 @@ http://osherove.com/kata
 
 4. Support different delimiters:
    to change a delimiter, the beginning of the string will contain a separate line
-<<<<<<< HEAD
    - [x] accept multiple delimiters
-=======
-   - [ ] accept multiple delimiters
->>>>>>> 6f6493bca77eed2023d7eef6add679a28c60cba7
    that looks like this:
    `“//[delimiter]\n[numbers…]”`
 
@@ -104,19 +100,19 @@ http://osherove.com/kata
 
 5. Calling **Add** with a **negative number** will throw an **exception** “negatives not allowed” -
    and the **negative that was passed**.
-   - [ ] throw exception
-   - [ ] display msg and err
+   - [x] throw exception
+   - [x] display msg and err
 
 6. If there are **multiple negatives**, show all of them in the **exception message**
-   - [ ] throw exception
-   - [ ] display msg with multi negatives
+   - [x] throw exception
+   - [x] display msg with multi negatives
 
 7. Using **TDD**, Add a method to `StringCalculator`
    called `public int GetCalledCount()`
    that returns how many times `Add()` was invoked.
    **Remember** - Start with a **failing (or even non compiling**) test.
-   - [ ] add method `public int GetCalledCount()`
-   - [ ] return count of `add()`
+   - [x] add method `public int GetCalledCount()`
+   - [x] return count of `add()`
 
 8. (.NET Only) Using TDD, Add an **event** to the `StringCalculator` class named
    `public event Action<string, int> AddOccured` ,
