@@ -40,17 +40,11 @@ Allow the add() method to handle "\n"
 def test_str_calc_new_line_add():
     assert code.StringCalculator.add("1,2\n1") == 4
     assert code.StringCalculator.add("4,3\n8") == 15
-    assert code.StringCalculator.add("6\n5,9") == 20
+    assert code.StringCalculator.add("6\n5,9,6,8") == 34
 
 
 """
-test for \n preceding ,
-def test_str_calc_new_line_add_with_comma_after():
-    assert code.StringCalculator.add("1\n,1") == 2
-"""
-
-"""
-Allow different delimiters.
+Allow custom delimiters.
 ex.
 `"//;\n1;2"==3`
 //l     delimiter pattern
@@ -63,4 +57,8 @@ def test_str_calc_provided_delimiter():
     assert code.StringCalculator.add("//;\n1;2") == 3
     assert code.StringCalculator.add("//.\n4.2") == 6
     assert code.StringCalculator.add("//;\n1;8,3") == 12
-    assert code.StringCalculator.add("\n1;2") != 3
+    assert code.StringCalculator.add("\n1;2") == 3
+
+
+def test_str_calc_no_negative_values_throw_exception():
+    assert code.StringCalculator.add("11;-2") == 11
