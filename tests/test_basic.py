@@ -21,11 +21,6 @@ def test_string_calc_return_sum_of_two_numbers():
     assert test_case.add("3,1") == 4
 
 
-"""
-Allow the add() method to handle an unknown amount of numbers
-"""
-
-
 def test_str_calc_return_sum_of_multiple_numbers():
     test_case = code.StringCalculator(0)
     assert test_case.add("8,0,0") == 8
@@ -84,3 +79,19 @@ def test_values_limited_to_1000():
     test_code = code.StringCalculator(0)
     assert test_code.add("1001,0") == 0
     assert test_code.add("1000,0") == 1000
+
+
+def test_delimiter_with_multiple_spaces():
+    test_code = code.StringCalculator(0)
+    assert test_code.add("//[***]\n1***2***3") == 6
+    assert test_code.add("//[***]\n4***10***-3") == 14
+
+
+def test_delimiter_with_multiple_delimiters():
+    test_code = code.StringCalculator(0)
+    assert test_code.add("//[*][%]\n1*2%3") == 6
+
+
+def test_delimiter_with_multiple_spaces_and_delimiters():
+    test_code = code.StringCalculator(0)
+    assert test_code.add("//[**][%%]\n1**2%%3") == 6
