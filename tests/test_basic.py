@@ -78,3 +78,9 @@ def test_add_counter_by_one():
     assert test_code.count == 1
     test_code.add("4,3")
     assert test_code.count == 2
+
+
+def test_values_limited_to_1000():
+    test_code = code.StringCalculator(0)
+    assert test_code.add("1001,0") == 0
+    assert test_code.add("1000,0") == 1000

@@ -49,7 +49,9 @@ class StringCalculator:
             try:
                 StringCalculator.is_positive(num)
                 if num.isdigit():
-                    sum_of_numbers += int(num)
+                    if int(num) <= 1000:
+                        sum_of_numbers += int(num)
+
             except ValueError:
                 print("negatives not allowed: " + num)
         return sum_of_numbers
