@@ -1,18 +1,41 @@
-# Python Starter
+<h1 align="center">Welcome to Sample project 👋</h1>
 
-This is a Python project skeleton that will you get up and running quickly. It sets up the following:
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/aaron-beach/SampleWork/blob/master/README.md" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+</p>
+
+This project is an assessment completed in Python. The assessment includes TDD principles(writing test cases prior to coding). Please contact me directly with any questions.
+
+## Table of contents
+
+* [Prerequisites](#prerequisites)
+* [Technologies](#technologies)
+* [Using Sample](#using-sample)
+* [Author](#author)
+* [License](#license)
+* [Assignment](#assignment)
+
+## Prerequisites
+
+>Before you begin, ensure you have met the following requirements:
+
+## Technologies
+
+>Project is created with:
 
 - Pre-commit Hooks ([pre-commit](https://pre-commit.com/))
 - Testing ([Pytest](https://docs.pytest.org/en/latest/))
 - Code formatting ([Black](https://github.com/python/black) and [flake8](http://flake8.pycqa.org/en/latest/))
 - Type checking ([mypy](http://mypy-lang.org/))
 
-Prior to every commit, the **pre-commit hooks** will run unit tests, format the code, and perform
-type checking.
+## Using Sample
 
-## Project Setup
+>To use this project, follow these steps:
 
-This starter project assumes you are using [pipenv](https://github.com/pypa/pipenv) to manage
+This project assumes you are using [pipenv](https://github.com/pypa/pipenv) to manage
 virtual environments and project dependencies.
 
 #### 1. Install project dependencies:
@@ -43,6 +66,41 @@ make test
 
 Tests will be automatically run prior to every commit.
 
+
+## Author
+
+
+👤 **Aaron Beach**
+
+* Website: aaronbeach.dev
+* Github: [@aaron-beach](https://github.com/aaron-beach)
+* LinkedIn: [@arbeach/](https://linkedin.com/in/arbeach/)
+
+## License
+
+
+This project uses the following license: MIT License
+
+Copyright (c) 2020 Aaron Beach
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ## Additional Notes
 
 In addition to autoformatting the code via **Black** and **flake8** for each commit,
@@ -52,7 +110,7 @@ it does the following:
 - Runs mypy for type checking
 
 If you would like to disable this, edit this [file](.pre-commit-config.yaml).
-
+# Assignment
 # TDD Kata 1 - String Calculator
 http://osherove.com/kata
 ## Before you start:
