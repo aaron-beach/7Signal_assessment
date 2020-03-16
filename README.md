@@ -135,21 +135,23 @@ http://osherove.com/kata
 
 9. Numbers bigger than **1000** should be **ignored**, for example:
    `2 + 1001 == 2`
-   - [ ] ignore numbers above 1000
+   - [x] ignore numbers above 1000
 
 10. Delimiters can be of any length with the following format:
     `“//[delimiter]\n”`
-    - [ ] passed delimiter of any length
+    - [x] passed delimiter of any length
     for example:
     `“//[***]\n1***2***3” == 6`
 
 11. Allow multiple delimiters like this:
     `“//[delim1][delim2]\n”`
+    - [x] passed multiple delimiters
     for example
     `“//[*][%]\n1*2%3” == 6.`
 
 12. make sure you can also handle multiple delimiters with **length longer than one char**
     for example
     `“//[**][%%]\n1**2%%3” == 6.`
+    - [x] passed multiple delimiters of any length
 
 For more info visit https://osherove.com or email roy@osherove.com
